@@ -1,0 +1,126 @@
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Just Ask: Learning to Answer Questions from Millions of Narrated Videos">
+      <meta name="author" content="WILLOW team">
+      <title>Just Ask: Learning to Answer Questions from Millions of Narrated Videos</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+   </head>
+   <body>
+      <div class="container">
+         <div class="header">
+            <h3>
+               <center> <b>Just Ask: Learning to Answer Questions from Millions of Narrated Videos</b> </center>
+            </h3>
+         </div>
+         <center>
+            <img id="image" src="photos/teaser.png" width="80%">
+         </center>
+         <div class="row">
+            <h3>People</h3>
+            <center>
+               <table style="width:70%">
+                  <tbody>
+                     <tr>
+                        <td><a href="https://antoyang.github.io/"><img id="image1" src="photos/antoine.jpg" width="60" height="60"> <br> Antoine <br> Yang</a></td>
+                        <td><a href="https://antoine77340.github.io/"><img id="image2" src="photos/amiech.jpg" width="60" height="60"> <br> Antoine <br>Miech</a></td>
+                        <td><a href="https://www.di.ens.fr/~josef/"><img id="image3" src="photos/josef.jpg" width="60" height="60"> <br>Josef <br>Sivic</a></td>
+                        <td><a href="http://www.di.ens.fr/~laptev/"><img id="image4" src="photos/ivan.jpg" width="60" height="60"> <br> Ivan <br>Laptev</a></td>
+                        <td><a href="http://lear.inrialpes.fr/~schmid/"><img id="image5" src="photos/cordelia.jpg" width="60" height="60"> <br>Cordelia <br>Schmid</a></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </center>
+         </div>
+         <div class="row">
+            <h3>Abstract</h3>
+            <p style="text-align: justify;">
+               Modern approaches to visual question answering require large annotated datasets for training. Manual annotation of questions and answers for videos, however, is tedious, expensive and prevents scalability.
+               In this work, we propose to avoid manual annotation and to learn video question answering (VideoQA) from millions of readily-available narrated videos.
+               We propose to automatically generate question-answer pairs from transcribed video narrations leveraging a state-of-the-art text transformer pipeline and obtain a new large-scale VideoQA training dataset.
+               To handle the open vocabulary of diverse answers in this dataset, we propose a training procedure based on a contrastive loss between a video-question multi-modal transformer and an answer embedding.
+               We evaluate our model on the zero-shot VideoQA task and show excellent results, in particular for rare answers. Furthermore, we demonstrate that finetuning our model on target datasets significantly outperforms the state of the art on MSRVTT-QA, MSVD-QA and ActivityNet-QA. Finally, for a detailed evaluation we introduce a new manually annotated VideoQA dataset with reduced language biases and high quality annotations.
+            </p>
+         </div>
+         <div class="row">
+            <h3>Qualitative results </h3>
+            <center>
+               <video id="video" class='center' src='video/video.mp4#t=1' height='360' controls='controls' preload='metadata' type='video/mp4' />
+            </center>
+         </div>
+         <div class="row">
+            <h3>Paper </h3>
+            <ul class="list" style="list-style-type:square">
+               <li><a href="https://arxiv.org/abs/2012.00451">Arxiv</a></li>
+            </ul>
+         </div>
+         <div class="row">
+            <h3> Code </h3>
+            <ul class="list" style="list-style-type:square">
+               <li>GitHub repository with code for question-answer generation, training and evaluation (coming soon) </li>
+            </ul>
+         </div>
+         <div class="row">
+            <h3>Data </h3>
+            <ul class="list" style="list-style-type:square">
+               <li><a href="https://www.di.ens.fr/willow/research/howto100m/">Videos</a></li>
+               <li>SQA69M question-answer pairs and timestamps (coming soon)</li>
+               <li>iVQA question-answer pairs and timestamps (coming soon)</li>
+            </ul>
+            <center>
+               <figure>
+                  <img id="sqa" src="photos/sqa.png" width="80%">
+                  <figcaption>Examples of question-answer pairs generated from speech in SQA69M.</figcaption>
+               </figure>
+            </center>
+         </div>
+         <div class="row">
+            <h3>BibTeX</h3>
+            <pre><tt>@article{yang2020just,
+title={Just Ask: Learning to Answer Questions from Millions of Narrated Videos},
+author={Yang, Antoine and Miech, Antoine and Sivic, Josef and Laptev, Ivan and Schmid, Cordelia},
+journal={arXiv preprint arXiv:2012.00451},
+year={2020}}</tt></pre>
+         </div>
+         <div class="row">
+            <h3>Acknowledgements</h3>
+            <p>
+               This work was granted access to the HPC resources of IDRIS under the allocation 2020-101267 made by GENCI.
+            </p>
+            <p>
+               This work was funded by a Google gift,  the French government under management of Agence Nationale de la Recherche as part of the "Investissements d'avenir" program, reference ANR-19-P3IA-0001 (PRAIRIE 3IA Institute), the Louis Vuitton ENS Chair on Artificial Intelligence, the European Regional Development Fund under project IMPACT (reg. no. CZ.02.1.01/0.0/0.0/15 003/0000468) and Antoine Miech's Google PhD fellowship.
+            </p>
+            <p>
+            </p>
+            We thank Pierre-Louis Guhur, Makarand Tapaswi and Ignacio Rocco for helpful discussions.
+            <p></p>
+         </div>
+         <div class="row">
+            <h3>Copyright Notice</h3>
+            <p>The documents contained in these directories are included by the contributing authors as a means to ensure timely dissemination of scholarly and technical work on a non-commercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author's copyright.</p>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-4 col-sm-12">
+            <center>
+               <img src="photos/inria.png" width="150">
+            </center>
+         </div>
+         <div class="col-md-4 col-sm-12">
+            <center>
+               <img src="photos/ens.png" width="150">
+            </center>
+         </div>
+         <div class="col-md-4 col-sm-12">
+            <center>
+               <img src="photos/ciirc.png" width="150">
+            </center>
+         </div>
+      </div>
+      <!-- /container -->
+      <!-- Bootstrap core JavaScript
+         ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+   </body>
+</html>
