@@ -15,7 +15,7 @@
             </h3>
          </div>
          <center>
-            <img id="image" src="img/teaser.png" width="80%">
+            <img id="image" src="img/justask-header.png" width="100%">
          </center>
          <div class="row">
             <h3>People</h3>
@@ -36,17 +36,27 @@
          <div class="row">
             <h3>Abstract</h3>
             <p style="text-align: justify;">
-               Modern approaches to visual question answering require large annotated datasets for training. Manual annotation of questions and answers for videos, however, is tedious, expensive and prevents scalability.
-               In this work, we propose to avoid manual annotation and to learn video question answering (VideoQA) from millions of readily-available narrated videos.
-               We propose to automatically generate question-answer pairs from transcribed video narrations leveraging a state-of-the-art text transformer pipeline and obtain a new large-scale VideoQA training dataset.
-               To handle the open vocabulary of diverse answers in this dataset, we propose a training procedure based on a contrastive loss between a video-question multi-modal transformer and an answer embedding.
-               We evaluate our model on the zero-shot VideoQA task and show excellent results, in particular for rare answers. Furthermore, we demonstrate that finetuning our model on target datasets significantly outperforms the state of the art on MSRVTT-QA, MSVD-QA and ActivityNet-QA. Finally, for a detailed evaluation we introduce a new manually annotated VideoQA dataset with reduced language biases and high quality annotations.
-            </p>
+               Recent methods for visual question answering rely on large-scale annotated datasets.
+               Manual annotation of questions and answers for videos, however, is tedious, expensive and prevents scalability.
+               In this work, we propose to avoid manual annotation and generate a large-scale training dataset for video question answering making use of automatic cross-modal supervision.
+               We leverage a question generation transformer trained on text data and use it to generate question-answer pairs from transcribed video narrations.
+               Given narrated videos, we then automatically generate the HowToVQA69M dataset with 69M video-question-answer triplets.
+               To handle the open vocabulary of diverse answers in this dataset, we propose a training procedure based on a contrastive loss between a video-question multi-modal transformer and an answer transformer.
+               We introduce the zero-shot VideoQA task and show excellent results, in particular for rare answers.
+               Furthermore, we demonstrate our method to significantly outperform the state of the art on MSRVTT-QA, MSVD-QA, ActivityNet-QA and How2QA.
+               Finally, for a detailed evaluation we introduce a new VideoQA dataset with reduced language biases and high-quality redundant manual annotations.
+	        </p>
          </div>
          <div class="row">
-            <h3>Qualitative results </h3>
+            <h3>Short presentation </h3>
             <center>
-               <video id="video" class='center' src='videos/just-ask.mp4#t=1' height='360' controls='controls' preload='metadata' type='video/mp4' />
+               <video id="videoprez" class='center' src='videos/just-ask-presentation.mp4#t=1' height='480' controls='controls' preload='metadata' type='video/mp4' />
+            </center>
+         </div>
+         <div class="row">
+            <h3>Qualitative Zero-shot VideoQA results </h3>
+            <center>
+               <video id="video" class='center' src='videos/just-ask-examples.mp4#t=1' height='480' controls='controls' preload='metadata' type='video/mp4' />
             </center>
          </div>
          <div class="row">
@@ -65,13 +75,13 @@
             <h3>Data </h3>
             <ul class="list" style="list-style-type:square">
                <li><a href="https://www.di.ens.fr/willow/research/howto100m/">Videos</a></li>
-               <li>SQA69M question-answer pairs and timestamps (coming soon)</li>
+               <li>HowToVQA69M question-answer pairs and timestamps (coming soon)</li>
                <li>iVQA question-answer pairs and timestamps (coming soon)</li>
             </ul>
             <center>
                <figure>
-                  <img id="sqa" src="img/sqa.png" width="80%">
-                  <figcaption>Examples of question-answer pairs generated from speech in SQA69M.</figcaption>
+                  <img id="sqa" src="img/justask-sqa.png" width="80%">
+                  <figcaption>Examples of automatically generated video-question-answer triplets in HowToVQA69M. <font color="green">The green color </font> indicates relevant examples, <font color="orange">the orange color </font> (penultimate row) indicates an incorrectly generated video-question-answer triplet, and <font color="red">the red color </font> (last row) indicates that the generated question and answer are only weakly related to the visual content.</figcaption>
                </figure>
             </center>
          </div>

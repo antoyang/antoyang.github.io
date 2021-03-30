@@ -181,11 +181,15 @@ year={2020}}</tt></pre>
 	<button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#abstract6">abstract</button>
 	<div id="abstract6" class="collapse">
         <p style="text-align: justify;">
-	Modern approaches to visual question answering require large annotated datasets for training. Manual annotation of questions and answers for videos, however, is tedious, expensive and prevents scalability.
-    In this work, we propose to avoid manual annotation and to learn video question answering (VideoQA) from millions of readily-available narrated videos.
-    We propose to automatically generate question-answer pairs from transcribed video narrations leveraging a state-of-the-art text transformer pipeline and obtain a new large-scale VideoQA training dataset.
-    To handle the open vocabulary of diverse answers in this dataset, we propose a training procedure based on a contrastive loss between a video-question multi-modal transformer and an answer embedding.
-    We evaluate our model on the zero-shot VideoQA task and show excellent results, in particular for rare answers. Furthermore, we demonstrate that finetuning our model on target datasets significantly outperforms the state of the art on MSRVTT-QA, MSVD-QA and ActivityNet-QA. Finally, for a detailed evaluation we introduce a new manually annotated VideoQA dataset with reduced language biases and high quality annotations.
+	        Recent methods for visual question answering rely on large-scale annotated datasets.
+            Manual annotation of questions and answers for videos, however, is tedious, expensive and prevents scalability.
+            In this work, we propose to avoid manual annotation and generate a large-scale training dataset for video question answering making use of automatic cross-modal supervision.
+            We leverage a question generation transformer trained on text data and use it to generate question-answer pairs from transcribed video narrations.
+            Given narrated videos, we then automatically generate the HowToVQA69M dataset with 69M video-question-answer triplets.
+            To handle the open vocabulary of diverse answers in this dataset, we propose a training procedure based on a contrastive loss between a video-question multi-modal transformer and an answer transformer.
+            We introduce the zero-shot VideoQA task and show excellent results, in particular for rare answers.
+            Furthermore, we demonstrate our method to significantly outperform the state of the art on MSRVTT-QA, MSVD-QA, ActivityNet-QA and How2QA.
+            Finally, for a detailed evaluation we introduce a new VideoQA dataset with reduced language biases and high-quality redundant manual annotations.
 	</p>
         </div>
           <!-- <a href="https://github.com/antoyang/JustAsk"><button type="button" class="btn btn-primary btn-xs">code</button></a> -->
@@ -315,7 +319,7 @@ url={https://openreview.net/forum?id=HygrdpVKvr}
 
       <div class="container">
         <footer>
-          <p align="right"><small>Copyright © Antoine Yang &nbsp;/&nbsp; Last update: December 2020</small></p>
+          <p align="right"><small>Copyright © Antoine Yang &nbsp;/&nbsp; Last update: March 2021 </small></p>
         </footer>
         <div style="height:10px;"></div>
       </div>
