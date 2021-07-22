@@ -9,14 +9,89 @@
    </head>
    <body>
       <div class="container">
+
          <div class="header">
             <h3>
                <center> <b>Just Ask: Learning to Answer Questions from Millions of Narrated Videos</b> </center>
             </h3>
          </div>
+
          <center>
             <img id="image" src="img/justask-header.png" width="80%">
          </center>
+
+         <div class="row">
+            <h3>Abstract</h3>
+            <p style="text-align: justify;">
+               Recent methods for visual question answering rely on large-scale annotated datasets.
+               Manual annotation of questions and answers for videos, however, is tedious, expensive and prevents scalability.
+               In this work, we propose to avoid manual annotation and generate a large-scale training dataset for video question answering making use of automatic cross-modal supervision.
+               We leverage a question generation transformer trained on text data and use it to generate question-answer pairs from transcribed video narrations.
+               Given narrated videos, we then automatically generate the HowToVQA69M dataset with 69M video-question-answer triplets.
+               To handle the open vocabulary of diverse answers in this dataset, we propose a training procedure based on a contrastive loss between a video-question multi-modal transformer and an answer transformer.
+               We introduce the zero-shot VideoQA task and show excellent results, in particular for rare answers.
+               Furthermore, we demonstrate our method to significantly outperform the state of the art on MSRVTT-QA, MSVD-QA, ActivityNet-QA and How2QA.
+               Finally, for a detailed evaluation we introduce iVQA, a new VideoQA dataset with reduced language biases and high-quality redundant manual annotations.
+	        </p>
+         </div>
+
+         <div class="row">
+            <h3>Short presentation </h3>
+            <center>
+               <video id="videoprez" class='center' src='videos/just-ask-presentation.mp4#t=1' height='480' controls='controls' preload='metadata' type='video/mp4' />
+            </center>
+         </div>
+
+         <div class="row">
+            <h3>Qualitative results </h3>
+            <ul class="list" style="list-style-type:square">
+               <li><a href="http://videoqa.paris.inria.fr/">Online VideoQA Demo </a></li>
+               <li>Examples of zero-shot VideoQA results on iVQA: </li>
+            <center>
+               <video id="video" class='center' src='videos/just-ask-examples.mp4#t=1' height='480' controls='controls' preload='metadata' type='video/mp4' />
+            </center>
+               </ul>
+         </div>
+
+         <div class="row">
+            <h3>Paper </h3>
+            <ul class="list" style="list-style-type:square">
+               <li><a href="https://arxiv.org/abs/2012.00451">arXiv</a></li>
+            </ul>
+         </div>
+
+         <div class="row">
+            <h3> Code </h3>
+            <ul class="list" style="list-style-type:square">
+               <li><a href="https://github.com/antoyang/just-ask">GitHub repository </a></li>
+               <li><a href="https://drive.google.com/drive/folders/1bMfT9WjBiNWgfdVl2dej4mUaXvICGGRH?usp=sharing"> Processed data and features </a></li>
+               <li><a href="https://drive.google.com/drive/folders/1DumwduSFaHB-JVZGHtkV1-f4VBYHH9xT?usp=sharing"> Model checkpoints </a></li>
+            </ul>
+         </div>
+
+         <div class="row">
+            <h3>HowToVQA69M Data </h3>
+            <ul class="list" style="list-style-type:square">
+               <li><a href="https://drive.google.com/drive/folders/1ZlpgjjcBnpTRgjwpW1z6x2PY513yhpWA?usp=sharing"> HowToVQA69M annotations </a> </li>
+               <li><a href="https://www.di.ens.fr/willow/research/howto100m/">HowToVQA69M videos and features </a></li>
+            </ul>
+            <center>
+               <figure>
+                  <img id="sqa" src="img/justask-sqa.png" width="80%">
+                  <figcaption>Examples of automatically generated video-question-answer triplets in HowToVQA69M. <font color="green">The green color </font> indicates relevant examples, <font color="orange">the orange color </font> (penultimate row) indicates an incorrectly generated video-question-answer triplet, and <font color="red">the red color </font> (last row) indicates that the generated question and answer are only weakly related to the visual content.</figcaption>
+               </figure>
+            </center>
+         </div>
+
+         <div class="row">
+            <h3>iVQA Data </h3>
+            <ul class="list" style="list-style-type:square">
+               <li><a href="https://drive.google.com/drive/folders/14e7hUcy4Ti25HdRRH5LUpuJTik2cjlzb?usp=sharing"> iVQA annotations and features </a> </li>
+               <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSecsMA0A0jduqEWt9EXY5wa6j-TT1GbWmBM-elQBbPhXBJkkA/viewform?usp=sf_link"> iVQA form to download raw videos </a> </li>
+               <li> For a quick overview, you can visualize examples of annotations in the <i> Qualitative Zero-Shot VideoQA </i> video or in the <a href="http://videoqa.paris.inria.fr/">Online VideoQA Demo </a>. </li>
+            </ul>
+         </div>
+
          <div class="row">
             <h3>People</h3>
             <center>
@@ -33,84 +108,36 @@
                </table>
             </center>
          </div>
-         <div class="row">
-            <h3>Abstract</h3>
-            <p style="text-align: justify;">
-               Recent methods for visual question answering rely on large-scale annotated datasets.
-               Manual annotation of questions and answers for videos, however, is tedious, expensive and prevents scalability.
-               In this work, we propose to avoid manual annotation and generate a large-scale training dataset for video question answering making use of automatic cross-modal supervision.
-               We leverage a question generation transformer trained on text data and use it to generate question-answer pairs from transcribed video narrations.
-               Given narrated videos, we then automatically generate the HowToVQA69M dataset with 69M video-question-answer triplets.
-               To handle the open vocabulary of diverse answers in this dataset, we propose a training procedure based on a contrastive loss between a video-question multi-modal transformer and an answer transformer.
-               We introduce the zero-shot VideoQA task and show excellent results, in particular for rare answers.
-               Furthermore, we demonstrate our method to significantly outperform the state of the art on MSRVTT-QA, MSVD-QA, ActivityNet-QA and How2QA.
-               Finally, for a detailed evaluation we introduce a new VideoQA dataset with reduced language biases and high-quality redundant manual annotations.
-	        </p>
-         </div>
-         <div class="row">
-            <h3>Short presentation </h3>
-            <center>
-               <video id="videoprez" class='center' src='videos/just-ask-presentation.mp4#t=1' height='480' controls='controls' preload='metadata' type='video/mp4' />
-            </center>
-         </div>
-         <div class="row">
-            <h3>Qualitative Zero-shot VideoQA results </h3>
-            <center>
-               <video id="video" class='center' src='videos/just-ask-examples.mp4#t=1' height='480' controls='controls' preload='metadata' type='video/mp4' />
-            </center>
-         </div>
-         <div class="row">
-            <h3>Paper </h3>
-            <ul class="list" style="list-style-type:square">
-               <li><a href="https://arxiv.org/abs/2012.00451">Arxiv</a></li>
-            </ul>
-         </div>
-         <div class="row">
-            <h3> Code </h3>
-            <ul class="list" style="list-style-type:square">
-               <li>GitHub repository with code for question-answer generation, training and evaluation (coming soon) </li>
-            </ul>
-         </div>
-         <div class="row">
-            <h3>Data </h3>
-            <ul class="list" style="list-style-type:square">
-               <li><a href="https://www.di.ens.fr/willow/research/howto100m/">Videos</a></li>
-               <li>HowToVQA69M question-answer pairs and timestamps (coming soon)</li>
-               <li>iVQA question-answer pairs and timestamps (coming soon)</li>
-            </ul>
-            <center>
-               <figure>
-                  <img id="sqa" src="img/justask-sqa.png" width="80%">
-                  <figcaption>Examples of automatically generated video-question-answer triplets in HowToVQA69M. <font color="green">The green color </font> indicates relevant examples, <font color="orange">the orange color </font> (penultimate row) indicates an incorrectly generated video-question-answer triplet, and <font color="red">the red color </font> (last row) indicates that the generated question and answer are only weakly related to the visual content.</figcaption>
-               </figure>
-            </center>
-         </div>
+
          <div class="row">
             <h3>BibTeX</h3>
             <pre><tt>@article{yang2020just,
-title={Just Ask: Learning to Answer Questions from Millions of Narrated Videos},
-author={Yang, Antoine and Miech, Antoine and Sivic, Josef and Laptev, Ivan and Schmid, Cordelia},
-journal={arXiv preprint arXiv:2012.00451},
-year={2020}}</tt></pre>
+         title={Just Ask: Learning to Answer Questions from Millions of Narrated Videos},
+         author={Yang, Antoine and Miech, Antoine and Sivic, Josef and Laptev, Ivan and Schmid, Cordelia},
+         journal={arXiv preprint arXiv:2012.00451},
+         year={2020}}</tt></pre>
          </div>
+
          <div class="row">
             <h3>Acknowledgements</h3>
             <p>
                This work was granted access to the HPC resources of IDRIS under the allocation 2020-101267 made by GENCI.
             </p>
             <p>
-               This work was funded by a Google gift,  the French government under management of Agence Nationale de la Recherche as part of the "Investissements d'avenir" program, reference ANR-19-P3IA-0001 (PRAIRIE 3IA Institute), the Louis Vuitton ENS Chair on Artificial Intelligence, the European Regional Development Fund under project IMPACT (reg. no. CZ.02.1.01/0.0/0.0/15 003/0000468) and Antoine Miech's Google PhD fellowship.
+               This work was funded by a Google gift,  the French government under management of Agence Nationale de la Recherche as part of the "Investissements d'avenir" program, reference ANR-19-P3IA-0001 (PRAIRIE 3IA Institute), the Louis Vuitton ENS Chair on Artificial Intelligence, the European Regional Development Fund under project IMPACT (reg. no. CZ.02.1.01/0.0/0.0/15 003/0000468) and A. Miech's Google PhD fellowship.
             </p>
             <p>
             </p>
-            We thank Pierre-Louis Guhur, Makarand Tapaswi and Ignacio Rocco for helpful discussions.
+            We thank P.-L. Guhur and M. Tapaswi for advices on using Amazon Mechanical Turk, E. Berthier, Q. Le Lidec and E. Chane Sane for manual evaluation of a sample of generated data, and I. Rocco for proofreading.
             <p></p>
          </div>
+
          <div class="row">
             <h3>Copyright Notice</h3>
             <p>The documents contained in these directories are included by the contributing authors as a means to ensure timely dissemination of scholarly and technical work on a non-commercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author's copyright.</p>
          </div>
       </div>
+
       <div class="row">
          <div class="col-md-4 col-sm-12">
             <center>
