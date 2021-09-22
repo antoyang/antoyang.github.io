@@ -24,10 +24,14 @@
           <div class="navbar-collapse collapse" id="navbar-main">
 
             <ul class="nav navbar-nav navbar-left">
-              <li ><a href="#paper">Paper</a></li>
-                <li ><a href="#code">Code</a></li>
-               <li ><a href="#data">Data</a></li>
-              <li ><a href="#demo">Demo</a></li>
+              <li ><a href="https://arxiv.org/abs/2012.00451">Paper</a></li>
+                <li ><a href="https://github.com/antoyang/just-ask">Code</a></li>
+               <li ><a href="#ivqa">Data</a></li>
+              <li ><a href="http://videoqa.paris.inria.fr/">Demo</a></li>
+               <li ><a href="https://www.youtube.com/watch?v=zxaAEtvt0wc&ab_channel=AntoineYang">Video (2 min)</a></li>
+               <li ><a href="https://www.youtube.com/watch?v=eyEW5Z23Ofs&ab_channel=AntoineYang">Video (12 min)</a></li>
+               <li ><a href="https://www.youtube.com/watch?v=63-4mA7a7tk&ab_channel=AntoineYang">Video (extra results)</a></li>
+               <li ><a href="#bibtex">BibTeX</a></li>
             </ul>
           </div>
         </div>
@@ -65,28 +69,38 @@
 	        </p>
          </div>
 
-         <div class="row">
-            <h3>Short presentation </h3>
+         <div class="row" id="2min">
+            <h3>Video - 2 min presentation </h3>
             <center>
-               <video id="videoprez" class='center' src='videos/just-ask-presentation.mp4#t=1' height='480' controls='controls' preload='metadata' type='video/mp4' />
+               <iframe width="640" height="360" src="https://www.youtube.com/embed/zxaAEtvt0wc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </center>
+         </div>
+
+         <div class="row" id="12min">
+            <h3>Video - 12 min presentation </h3>
+            <center>
+               <iframe width="640" height="360" src="https://www.youtube.com/embed/eyEW5Z23Ofs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </center>
+         </div>
+
+         <div class="row" id="extra">
+            <h3>Video - extra results </h3>
+            <center>
+               <iframe width="640" height="360" src="https://www.youtube.com/embed/63-4mA7a7tk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </center>
          </div>
 
          <div class="row" id="demo">
-            <h3>Qualitative results </h3>
-            <ul class="list" style="list-style-type:square">
-               <li><a href="http://videoqa.paris.inria.fr/">Online VideoQA Demo </a></li>
-               <li>Examples of zero-shot VideoQA results on iVQA: </li>
-            <center>
-               <video id="video" class='center' src='videos/just-ask-examples.mp4#t=1' height='480' controls='controls' preload='metadata' type='video/mp4' />
-            </center>
-               </ul>
+            <h3>Online VideoQA Demo</h3>
+            At <a href="http://videoqa.paris.inria.fr/">this link</a>, we host an online demo where you can ask the question of your choice to our models about a large set of videos!
          </div>
 
          <div class="row" id="paper">
             <h3>Paper </h3>
             <ul class="list" style="list-style-type:square">
                <li><a href="https://arxiv.org/abs/2012.00451">arXiv</a></li>
+               <li><a href="https://hal.archives-ouvertes.fr/hal-03328749/">HAL</a></li>
+               <!-- <li>ICCV proceedings: main paper - supplementary material </li> tbc -->
             </ul>
          </div>
 
@@ -99,30 +113,36 @@
             </ul>
          </div>
 
-         <div class="row" id="data">
+         <div class="row" id="ivqa">
             <h3>iVQA Data </h3>
             <ul class="list" style="list-style-type:square">
                <li><a href="https://drive.google.com/drive/folders/14e7hUcy4Ti25HdRRH5LUpuJTik2cjlzb?usp=sharing"> iVQA annotations and features </a> </li>
                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSecsMA0A0jduqEWt9EXY5wa6j-TT1GbWmBM-elQBbPhXBJkkA/viewform?usp=sf_link"> iVQA form to download raw videos </a> </li>
-               <li> For a quick overview, you can visualize examples of annotations in the <i> Qualitative Zero-Shot VideoQA </i> video or in the <a href="http://videoqa.paris.inria.fr/">Online VideoQA Demo </a>. </li>
+               <li> For a quick overview, you can visualize examples of annotations in the <a href="#extra">video of extra results</a> or in the <a href=#demo>Online VideoQA Demo </a>. </li>
             </ul>
          </div>
 
-         <div class="row">
+         <div class="row" id="howtovqa">
             <h3>HowToVQA69M Data </h3>
             <ul class="list" style="list-style-type:square">
                <li><a href="https://drive.google.com/drive/folders/1ZlpgjjcBnpTRgjwpW1z6x2PY513yhpWA?usp=sharing"> HowToVQA69M annotations </a> </li>
-               <li><a href="https://www.di.ens.fr/willow/research/howto100m/">HowToVQA69M videos and features </a></li>
+               <li><a href="https://www.di.ens.fr/willow/research/howto100m/">HowToVQA69M raw videos and features </a></li>
             </ul>
             <center>
                <figure>
                   <img id="sqa" src="img/justask-sqa.png" width="80%">
-                  <figcaption>Examples of automatically generated video-question-answer triplets in HowToVQA69M. <font color="green">The green color </font> indicates relevant examples, <font color="orange">the orange color </font> (penultimate row) indicates an incorrectly generated video-question-answer triplet, and <font color="red">the red color </font> (last row) indicates that the generated question and answer are only weakly related to the visual content.</figcaption>
+                  <figcaption>Examples of automatically generated video-question-answer triplets in HowToVQA69M. <font color="green">The green color </font> indicates relevant examples, <font color="orange">the orange color </font> (penultimate row) indicates a failure of the question-answer generation, and <font color="red">the red color </font> (last row) indicates that the generated question-answer is unrelated to the visual content.</figcaption>
                </figure>
             </center>
          </div>
 
-         <div class="row">
+         <div class="row" id="disclaimer">
+            <h3>Disclaimer</h3>
+            Data sourced from YouTube may be prone to biases.
+            Please be careful of unintended societal, gender, racial and other biases when training or deploying models trained on this data.
+         </div>
+
+         <div class="row" id="people">
             <h3>People</h3>
             <center>
                <table style="width:70%">
@@ -132,23 +152,23 @@
                         <td><a href="https://antoine77340.github.io/"><img id="image2" src="img/amiech.jpg" width="60" height="60"> <br> Antoine <br>Miech</a></td>
                         <td><a href="https://www.di.ens.fr/~josef/"><img id="image3" src="img/josef.jpg" width="60" height="60"> <br>Josef <br>Sivic</a></td>
                         <td><a href="http://www.di.ens.fr/~laptev/"><img id="image4" src="img/ivan.jpg" width="60" height="60"> <br> Ivan <br>Laptev</a></td>
-                        <td><a href="http://lear.inrialpes.fr/~schmid/"><img id="image5" src="img/cordelia.jpg" width="60" height="60"> <br>Cordelia <br>Schmid</a></td>
+                        <td><a href="https://www.di.ens.fr/willow/people_webpages/cordelia/"><img id="image5" src="img/cordelia.jpg" width="60" height="60"> <br>Cordelia <br>Schmid</a></td>
                      </tr>
                   </tbody>
                </table>
             </center>
          </div>
 
-         <div class="row">
+         <div class="row" id="bibtex">
             <h3>BibTeX</h3>
             <pre><tt>@article{yang2020just,
          title={Just Ask: Learning to Answer Questions from Millions of Narrated Videos},
          author={Yang, Antoine and Miech, Antoine and Sivic, Josef and Laptev, Ivan and Schmid, Cordelia},
          journal={arXiv preprint arXiv:2012.00451},
-         year={2020}}</tt></pre>
+         year={2020}}</tt></pre> <!-- tbc -->
          </div>
 
-         <div class="row">
+         <div class="row" id="acknowledgements">
             <h3>Acknowledgements</h3>
             <p>
                This work was granted access to the HPC resources of IDRIS under the allocation 2020-101267 made by GENCI.
@@ -162,26 +182,31 @@
             <p></p>
          </div>
 
-         <div class="row">
+         <div class="row" id="copyright">
             <h3>Copyright Notice</h3>
             <p>The documents contained in these directories are included by the contributing authors as a means to ensure timely dissemination of scholarly and technical work on a non-commercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author's copyright.</p>
          </div>
       </div>
 
       <div class="row">
-         <div class="col-md-4 col-sm-12">
+         <div class="col-md-3 col-sm-12">
             <center>
                <img src="img/inria.png" width="150">
             </center>
          </div>
-         <div class="col-md-4 col-sm-12">
+         <div class="col-md-3 col-sm-12">
             <center>
                <img src="img/ens.png" width="150">
             </center>
          </div>
-         <div class="col-md-4 col-sm-12">
+         <div class="col-md-3 col-sm-12">
             <center>
-               <img src="img/ciirc.png" width="150">
+               <img src="img/ciirc.png" width="120">
+            </center>
+         </div>
+         <div class="col-md-3 col-sm-12">
+            <center>
+               <img src="img/deepmind.png" width="50">
             </center>
          </div>
       </div>
