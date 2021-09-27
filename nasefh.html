@@ -1,0 +1,151 @@
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel='icon' href='img/favicon.ico' type='image/x-icon'/>
+      <meta name="description" content="NAS evaluation is frustratingly hard">
+      <meta name="author" content="Huawei Noah's Ark Lab">
+      <title>NAS evaluation is frustratingly hard</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+   </head>
+   <body>
+
+      <!-- Navigation bar -->
+      <div class="navbar navbar-default  navbar-fixed-top bg-info">
+        <div class="container">
+          <div class="navbar-header">
+
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse" id="navbar-main">
+
+            <ul class="nav navbar-nav navbar-left">
+              <li ><a href="https://arxiv.org/abs/1912.12522">Paper</a></li>
+                <li ><a href="https://github.com/antoyang/NAS-Benchmark">Code</a></li>
+               <li ><a href="https://www.youtube.com/watch?v=jB7vrGR_4ak&ab_channel=AntoineYang">Video (5 min)</a></li>
+                <li ><a href="https://iclr.cc/virtual_2020/poster_HygrdpVKvr.html">ICLR webpage</a></li>
+               <li ><a href="#bibtex">BibTeX</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- end of navigation bar -->
+      <div style="height:40px;" id="home"></div>
+      <div style="height:20px;"></div>
+
+      <div class="container">
+
+         <div class="header">
+            <h3>
+               <center> <b>NAS evaluation is frustratingly hard</b> </center>
+            </h3>
+         </div>
+         <div style="height:10px;"></div>
+
+         <center>
+            <img id="image" src="img/nasefh-header.png" width="50%">
+         </center>
+
+         <div class="row">
+            <h3>Abstract</h3>
+            <p style="text-align: justify;">
+               Neural Architecture Search (NAS) is an exciting new field which promises to be as much as a game-changer as Convolutional Neural Networks were in 2012.
+                Despite many great works leading to substantial improvements on a variety of tasks, comparison between different methods is still very much an open issue.
+                While most algorithms are tested on the same datasets, there is no shared experimental protocol followed by all.
+                As such, and due to the under-use of ablation studies, there is a lack of clarity regarding why certain methods are more effective than others.
+                Our first contribution is a benchmark of 8 NAS methods on 5 datasets.
+                To overcome the hurdle of comparing methods with different search spaces, we propose using a method’s relative improvement over the randomly sampled average architecture, which effectively removes advantages arising from expertly engineered search spaces or training protocols.
+                Surprisingly, we find that many NAS techniques struggle to significantly beat the average architecture baseline. We perform further experiments with the commonly used DARTS search space in order to understand the contribution of each component in the NAS pipeline.
+                These experiments highlight that: (i) the use of tricks in the evaluation protocol has a predominant impact on the reported performance of architectures;
+                (ii) the cell-based search space has a very narrow accuracy range, such that the seed has a considerable impact on architecture rankings;
+                (iii) the hand-designed macrostructure (cells) is more important than the searched micro-structure (operations);
+                and (iv) the depth-gap is a real phenomenon, evidenced by the change in rankings between 8 and 20 cell architectures.
+                To conclude, we suggest best practices, that we hope will prove useful for the community and help mitigate current NAS pitfalls, e.g. difficulties in reproducibility and comparison of search methods. The code used is available at https://github.com/antoyang/NAS-Benchmark.
+	        </p>
+         </div>
+
+         <div class="row" id="2min">
+            <h3>Video - 5 min presentation </h3>
+            <center>
+               <iframe width="640" height="360" src="https://www.youtube.com/embed/jB7vrGR_4ak" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </center>
+         </div>
+
+         <div class="row" id="paper">
+            <h3>Paper </h3>
+            <ul class="list" style="list-style-type:square">
+               <li><a href="https://arxiv.org/abs/1912.12522">arXiv</a></li>
+               <li><a href="https://openreview.net/forum?id=HygrdpVKvr">ICLR 2020 Proceedings (OpenReview)</a></li>
+            </ul>
+         </div>
+
+         <div class="row" id="code">
+            <h3> Code </h3>
+            <ul class="list" style="list-style-type:square">
+               <li><a href="https://github.com/antoyang/NAS-Benchmark">GitHub repository </a></li>
+            </ul>
+         </div>
+
+          <div class="row" id="misc">
+            <h3> Misc. </h3>
+            <ul class="list" style="list-style-type:square">
+               <li> <a href="https://iclr.cc/virtual_2020/poster_HygrdpVKvr.html">ICLR 2020 webpage </a></li>
+                <li> <a href="https://antoyang.github.io/slides/nasefh-iclr20.pdf">Slides </a></li>
+                <li> <a href="https://medium.com/@antoyang/is-neural-architecture-search-really-worth-it-2d0b9f28a1ed">A medium article: <i>Is Neural Architecture Search really worth it? </i></a></li>
+                <li> <a href="https://www.youtube.com/watch?v=rHrYPVMOEYU&t=1s&ab_channel=AndreiMargeloiu-MachineLearning">A <i>paper explained video </i> by Andrei Margeloiu</a></li>
+                <li> <a href="https://iclr.cc/virtual/2021/workshop/2145">A related talk: Fabio's keynote talk at ICLR 2021 Workshop on Neural Architecture Search</a></li>
+            </ul>
+         </div>
+
+         <div class="row" id="people">
+            <h3>People</h3>
+            <center>
+               <table style="width:70%">
+                  <tbody>
+                     <tr>
+                        <td><a href="https://antoyang.github.io/"><img id="image1" src="img/antoine.jpg" width="60" height="60"> <br> Antoine <br> Yang</a></td>
+                        <td><a href="https://www.linkedin.com/in/pmesperanca/"><img id="image2" src="img/pedro.png" width="60" height="60"> <br> Pedro M. <br>Esperança</a></td>
+                        <td><a href="https://www.linkedin.com/in/fabio-maria-carlucci-a6662782/"><img id="image3" src="img/fabio.png" width="60" height="60"> <br>Fabio Maria <br>Carlucci</a></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </center>
+         </div>
+
+         <div class="row" id="bibtex">
+            <h3>BibTeX</h3>
+            <pre><tt>@inproceedings{
+Yang2020NAS,
+title={NAS evaluation is frustratingly hard},
+author={Antoine Yang and Pedro M. Esperança and Fabio M. Carlucci},
+booktitle={International Conference on Learning Representations},
+year={2020},
+url={https://openreview.net/forum?id=HygrdpVKvr}
+}</tt></pre>
+         </div>
+
+         <div class="row" id="copyright">
+            <h3>Copyright Notice</h3>
+            <p>The documents contained in these directories are included by the contributing authors as a means to ensure timely dissemination of scholarly and technical work on a non-commercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author's copyright.</p>
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="col-md-12 col-sm-12">
+            <center>
+               <img src="img/huawei.png" width="100">
+            </center>
+         </div>
+         </div>
+      </div>
+      <!-- /container -->
+      <!-- Bootstrap core JavaScript
+         ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+   </body>
+</html>
