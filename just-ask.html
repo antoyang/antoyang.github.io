@@ -71,7 +71,35 @@
 
          <div class="row" id="demo">
             <h3>Online VideoQA Demo</h3>
-            At <a href="http://videoqa.paris.inria.fr/">this link</a>, we host an online demo where you can ask the question of your choice to our models about a large set of videos!
+
+            At <a href="http://videoqa.paris.inria.fr/">this link</a>, we host an online demo where you can ask the question of your choice to our models about a large set of videos. Here is an example below:
+
+         <div class="row">
+          <div class="col-sm-offset-1 col-sm-6">
+         <iframe src="http://www.youtube.com/embed/XbxRqlHtKUE?start=107&end=136"
+                width="100%" height="360" frameborder="0" ></iframe>
+          </div>
+
+         <div class="col-sm-3">
+         <form action="http://videoqa.paris.inria.fr/vqa?" method="get" autocomplete="off">
+            <label for="video_id">YouTube Video ID</label>
+            <input type="text" id="video_id" name="video_id" size="15" value="XbxRqlHtKUE"><br><br>
+            <label for="start">Start second</label>
+            <input type="text" id="start" name="start" size="5" value=107><br><br>
+            <label for="end">End second</label>
+            <input type="text" id="end" name="end" size="5" value=136><br><br>
+             <b> Type your question below: </b> <br>
+            <input type="text" id="question" name="question" size="50" value="What type of animal do we see in this video?"><br><br>
+			 <b> Choose the model below: </b> <br>
+            <input type="radio" id="finetuned" name="model" value="finetuned" checked>
+             <label for="finetuned">Finetuned</label>
+            <input type="radio" id="zeroshot" name="model" value="zeroshot">
+             <label for="zeroshot">Zero-Shot</label><br>
+            <input type="submit" value="Submit"><br>
+         </form>
+         </div>
+         </div>
+
          </div>
 
          <div class="row" id="2min">
