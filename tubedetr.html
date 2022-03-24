@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel='icon' href='img/favicon.ico' type='image/x-icon'/>
+      <meta name="description" content="TubeDETR: Spatio-Temporal Video Grounding with Transformers">
+      <meta name="author" content="WILLOW team">
+      <title>TubeDETR: Spatio-Temporal Video Grounding with Transformers</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+   </head>
+<body>
+      <!-- Navigation bar -->
+      <div class="navbar navbar-default  navbar-fixed-top bg-info">
+        <div class="container">
+          <div class="navbar-header">
+
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse" id="navbar-main">
+
+            <ul class="nav navbar-nav navbar-left">
+              <li ><a href="https://arxiv.org/abs/tbc">Paper</a></li>
+                <li ><a href="https://github.com/antoyang/TubeDETR">Code</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- end of navigation bar -->
+      <div style="height:40px;" id="home"></div>
+      <div style="height:20px;"></div>
+
+      <div class="container">
+
+         <div class="header">
+            <h3>
+               <center> <b>TubeDETR: Spatio-Temporal Video Grounding with Transformers</b> </center>
+            </h3>
+         </div>
+         <div style="height:10px;"></div>
+
+         <center>
+            <img id="image" src="img/tubedetr-header.png" width="50%">
+         </center>
+
+         <div class="row">
+            <h3>Abstract</h3>
+            <p style="text-align: justify;">
+               We consider the problem of localizing a spatio-temporal tube in a video corresponding to a given text query.
+            This is a challenging task that requires the joint and efficient modeling of temporal, spatial and multi-modal interactions.
+            To address this task, we propose TubeDETR, a transformer-based architecture inspired by the recent success of such models for text-conditioned object detection.
+            Our model notably includes: (i) an efficient video and text encoder that models spatial multi-modal interactions over sparsely sampled frames and
+            (ii) a space-time decoder that jointly performs spatio-temporal localization.
+            We demonstrate the advantage of our proposed components through an extensive ablation study.
+            We also evaluate our full approach on the spatio-temporal video grounding task and demonstrate improvements over the state of the art on the challenging VidSTG and HC-STVG benchmarks.
+	        </p>
+         </div>
+
+         <div class="row" id="paper">
+            <h3>Paper </h3>
+            <ul class="list" style="list-style-type:square">
+               <li><a href="https://arxiv.org/abs/tbc">arXiv</a></li>
+            </ul>
+
+            <h4>BibTeX</h4>
+                        <pre><tt>@inproceedings{yang2022tubedetr,
+title={TubeDETR: Spatio-Temporal Video Grounding with Transformers},
+author={Yang, Antoine and Miech, Antoine and Sivic, Josef and Laptev, Ivan and Schmid, Cordelia},
+booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+year={2022}}</tt></pre>
+         </div>
+
+         <div class="row" id="code">
+            <h3> Code </h3>
+            <ul class="list" style="list-style-type:square">
+               <li><a href="https://github.com/antoyang/TubeDETR">GitHub repository</a></li>
+            </ul>
+         </div>
+
+         <div class="row" id="people">
+            <h3>People</h3>
+            <center>
+               <table style="width:70%">
+                  <tbody>
+                     <tr>
+                        <td style="text-align: center; vertical-align: middle;"><a href="https://antoyang.github.io/"><img id="image1" src="img/antoine.jpg" width="60" height="60"> <br> Antoine <br> Yang</a></td>
+                        <td style="text-align: center; vertical-align: middle;"><a href="https://antoine77340.github.io/"><img id="image2" src="img/amiech.jpg" width="60" height="60"> <br> Antoine <br>Miech</a></td>
+                        <td style="text-align: center; vertical-align: middle;"><a href="https://www.di.ens.fr/~josef/"><img id="image3" src="img/josef.jpg" width="60" height="60"> <br>Josef <br>Sivic</a></td>
+                        <td style="text-align: center; vertical-align: middle;"><a href="http://www.di.ens.fr/~laptev/"><img id="image4" src="img/ivan.jpg" width="60" height="60"> <br> Ivan <br>Laptev</a></td>
+                        <td style="text-align: center; vertical-align: middle;"><a href="https://www.di.ens.fr/willow/people_webpages/cordelia/"><img id="image5" src="img/cordelia.jpg" width="60" height="60"> <br>Cordelia <br>Schmid</a></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </center>
+         </div>
+
+          <div class="row" id="acknowledgements">
+            <h3>Acknowledgements</h3>
+            <p>
+               This work was granted access to the HPC resources of IDRIS under the allocation 2021-AD011011670R1 made by GENCI.
+            </p>
+            <p>
+               The work was funded by a Google gift,  the French government under management of Agence Nationale de la Recherche as part of the "Investissements d'avenir" program, reference ANR-19-P3IA-0001 (PRAIRIE 3IA Institute), the Louis Vuitton ENS Chair on Artificial Intelligence, the European Regional Development Fund under project IMPACT (reg.\ no.\ CZ.02.1.01/0.0/0.0/15 003/0000468).
+            </p>
+            <p>
+                We thank S. Chen and J. Chen for helpful discussions and O. Bounou and P.-L. Guhur for proofreading.
+            </p>
+         </div>
+
+         <div class="row" id="copyright">
+            <h3>Copyright Notice</h3>
+            <p>The documents contained in these directories are included by the contributing authors as a means to ensure timely dissemination of scholarly and technical work on a non-commercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author's copyright.</p>
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="col-md-3 col-sm-12">
+            <center>
+               <img src="img/inria.png" width="150">
+            </center>
+         </div>
+         <div class="col-md-3 col-sm-12">
+            <center>
+               <img src="img/ens.png" width="150">
+            </center>
+         </div>
+          <div class="col-md-3 col-sm-12">
+            <center>
+               <img src="img/deepmind.png" width="50">
+            </center>
+         </div>
+         <div class="col-md-3 col-sm-12">
+            <center>
+               <img src="img/ciirc.png" width="120">
+            </center>
+         </div>
+      </div>
+      <!-- /container -->
+      <!-- Bootstrap core JavaScript
+         ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+
+</body>
+</html>
