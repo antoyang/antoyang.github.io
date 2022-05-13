@@ -122,28 +122,45 @@
          </div>
 
          <div class="row" id="paper">
-            <h3>Paper </h3>
+            <h3>Conference Paper </h3>
             <ul class="list" style="list-style-type:square">
                <li><a href="https://arxiv.org/abs/2012.00451">arXiv</a></li>
                <li><a href="https://hal.archives-ouvertes.fr/hal-03328749/">HAL</a></li>
                 <li>ICCV 2021 Proceedings: <a href="https://openaccess.thecvf.com/content/ICCV2021/html/Yang_Just_Ask_Learning_To_Answer_Questions_From_Millions_of_Narrated_ICCV_2021_paper.html">CVF</a>; <a href="https://ieeexplore.ieee.org/document/9710833">IEEE Explore</a></a> </li>
             </ul>
 
-            <h4>BibTeX</h4>
+             <h4>BibTeX</h4>
                <pre><tt>@inproceedings{yang2021justask,
 title={Just ask: Learning to answer questions from millions of narrated videos},
 author={Yang, Antoine and Miech, Antoine and Sivic, Josef and Laptev, Ivan and Schmid, Cordelia},
 booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
 pages={1686--1697},
 year={2021}}</tt></pre>
+
+             <h3>Journal Extension (Learning to Answer Visual Questions from Web Videos)</h3>
+            <ul class="list" style="list-style-type:square">
+               <li><a href="https://arxiv.org/abs/2205.05019v2">arXiv</a></li>
+               <li><a href="https://hal.inria.fr/hal-03664182">HAL</a></li>
+                <li>TPAMI Special Issue on the Best Papers of ICCV 2021: <a href="https://www.computer.org/csdl/journal/tp/5555/01/09770842/1DeEV1p2fSg">IEEE preprint</a></li>
+            </ul>
+
+             <h4>BibTeX</h4>
+             <pre><tt>@article{yang2022learningta,
+title={Learning to Answer Visual Questions from Web Videos},
+author={Antoine Yang and Antoine Miech and Josef Sivic and Ivan Laptev and Cordelia Schmid},
+journal={IEEE transactions on pattern analysis and machine intelligence},
+year={2022},
+volume={PP}
+}</tt></pre>
          </div>
 
          <div class="row" id="code">
             <h3> Code </h3>
             <ul class="list" style="list-style-type:square">
                <li><a href="https://github.com/antoyang/just-ask">GitHub repository </a></li>
-               <li><a href="https://drive.google.com/drive/folders/1bMfT9WjBiNWgfdVl2dej4mUaXvICGGRH?usp=sharing"> Processed data and features </a></li>
-               <li><a href="https://drive.google.com/drive/folders/1DumwduSFaHB-JVZGHtkV1-f4VBYHH9xT?usp=sharing"> Model checkpoints </a></li>
+               <li><a href="https://drive.google.com/drive/folders/1bMfT9WjBiNWgfdVl2dej4mUaXvICGGRH?usp=sharing"> Processed data and features for downstream datasets </a></li>
+               <li><a href="https://drive.google.com/drive/folders/1DumwduSFaHB-JVZGHtkV1-f4VBYHH9xT?usp=sharing"> Model checkpoints (pretrained on HowToVQA69M) </a></li>
+               <li><a href="https://drive.google.com/drive/folders/1kf7Q-UJIdfm6GeVHJV-e2WDaXvZpSyNE?usp=sharing"> Model checkpoints (pretrained on WebVidVQA3M) </a></li>
             </ul>
          </div>
 
@@ -170,9 +187,23 @@ year={2021}}</tt></pre>
             </center>
          </div>
 
+          <div class="row" id="webvidvqa">
+            <h3>WebVidVQA3M Data </h3>
+            <ul class="list" style="list-style-type:square">
+               <li><a href="https://drive.google.com/drive/folders/1ZgZGO4oZzFxk8-5WDkP4pqGfBuMome8E?usp=sharing"> WebVidVQA3M annotations </a> </li>
+               <li><a href="https://m-bain.github.io/webvid-dataset/">WebVid2M videos </a></li>
+            </ul>
+            <center>
+               <figure>
+                  <img id="sqa2" src="img/justask-sqa2.png" width="80%">
+                  <figcaption>Examples of automatically generated video-question-answer triplets in WebVidVQA3M. <font color="green">The green color </font> indicates relevant examples, <font color="orange">the orange color </font> (penultimate row) indicates a failure of the question-answer generation, and <font color="red">the red color </font> (last row) indicates that the generated question-answer is unrelated to the visual content.</figcaption>
+               </figure>
+            </center>
+         </div>
+
          <div class="row" id="disclaimer">
             <h3>Disclaimer</h3>
-            Data sourced from YouTube may be prone to biases.
+            Data sourced from YouTube or Shutterstock may be prone to biases.
             Please be careful of unintended societal, gender, racial and other biases when training or deploying models trained on this data.
          </div>
 
@@ -208,10 +239,10 @@ year={2021}}</tt></pre>
                This work was granted access to the HPC resources of IDRIS under the allocation 2020-101267 made by GENCI.
             </p>
             <p>
-               This work was funded by a Google gift,  the French government under management of Agence Nationale de la Recherche as part of the "Investissements d'avenir" program, reference ANR-19-P3IA-0001 (PRAIRIE 3IA Institute), the Louis Vuitton ENS Chair on Artificial Intelligence, the European Regional Development Fund under project IMPACT (reg. no. CZ.02.1.01/0.0/0.0/15 003/0000468) and A. Miech's Google PhD fellowship.
+               This work was funded by a Google gift,  the French government under management of Agence Nationale de la Recherche as part of the "Investissements d'avenir" program, reference ANR-19-P3IA-0001 (PRAIRIE 3IA Institute), the Louis Vuitton ENS Chair on Artificial Intelligence, the European Regional Development Fund under project IMPACT (reg. no. CZ.02.1.01/0.0/0.0/15 003/0000468) and Antoine Miech's Google PhD fellowship.
             </p>
             <p>
-            We thank P.-L. Guhur and M. Tapaswi for advices on using Amazon Mechanical Turk, E. Berthier, Q. Le Lidec and E. Chane-Sane for manual evaluation of a sample of generated data, and I. Rocco for proofreading.
+            We thank Pierre-Louis Guhur and Makarand Tapaswi for advices on using Amazon Mechanical Turk, Eloïse Berthier, Quentin Le Lidec and Elliot Chane-Sane for manual evaluation of a sample of generated data, and Ignacio Rocco for proofreading.
             </p>
          </div>
 

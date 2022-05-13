@@ -87,6 +87,17 @@
         </div>
         <!-- End news header -->
 
+    <!-- Just Ask extension accepted -->
+        <div class="row">
+          <div class="col-sm-1 col-md-1">
+            <span class="label label-success">04 / 2022</span>
+          </div>
+          <div class="col-sm-11 col-md-11">
+              <a href="just-ask.html">Just Ask extension</a> is accepted at the <a href="https://www.computer.org/csdl/journal/tp">TPAMI Special Issue on the Best Papers of ICCV 2021</a>!
+          </div>
+        </div>
+        <div style="height:3px;"></div>
+
     <!-- Google internship -->
         <div class="row">
           <div class="col-sm-1 col-md-1">
@@ -205,6 +216,52 @@
           <div class="col-md-12">
             <h2>Research</h2>
               <p>See my <a href="https://scholar.google.com/citations?user=SlMKN6IAAAAJ">Google Scholar </a> and <a href="https://github.com/antoyang"> GitHub </a> profiles for more information.</p>
+
+<!-- Just Ask extension, TPAMI22 -->
+    <div class="row">
+	<div class="col-xs-10 col-sm-4 col-md-4">
+		<a class="thumbnail">
+		<img src="./img/justaskextension.PNG" alt="Learning to Answer Visual Questions from Web Videos">
+                </a>
+	</div>
+      <div class="col-xs-12 col-sm-8 col-md-8">
+          <!-- <font color="red">[New]</font> -->
+          <strong>Learning to Answer Visual Questions from Web Videos</strong> (journal extension of <strong>Just Ask</strong>) </br>
+	<u>Antoine Yang</u>, Antoine Miech, Josef Sivic, Ivan Laptev, and Cordelia Schmid<br>
+          TPAMI Special Issue on the Best Papers of ICCV 2021 <br>
+          <a href="https://arxiv.org/pdf/2205.05019v2.pdf"><button type="button" class="btn btn-primary btn-xs">pdf</button></a>
+	<a href="just-ask.html"><button type="button" class="btn btn-primary btn-xs">project page</button></a>
+          <button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#bibtex5">bibtex</button>
+	<div id="bibtex5" class="collapse">
+	  <pre><tt>@article{yang2022learningta,
+title={Learning to Answer Visual Questions from Web Videos},
+author={Antoine Yang and Antoine Miech and Josef Sivic and Ivan Laptev and Cordelia Schmid},
+journal={IEEE transactions on pattern analysis and machine intelligence},
+year={2022},
+volume={PP}
+}</tt></pre>
+	</div>
+	<button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#abstract5">abstract</button>
+	<div id="abstract5" class="collapse">
+        <p style="text-align: justify;">
+	        Recent methods for visual question answering rely on large-scale annotated datasets.
+            Manual annotation of questions and answers for videos, however, is tedious, expensive and prevents scalability.
+            In this work, we propose to avoid manual annotation and generate a large-scale training dataset for video question answering making use of automatic cross-modal supervision.
+            We leverage a question generation transformer trained on text data and use it to generate question-answer pairs from transcribed video narrations.
+            Given narrated videos, we then automatically generate the HowToVQA69M dataset with 69M video-question-answer triplets.
+            To handle the open vocabulary of diverse answers in this dataset, we propose a training procedure based on a contrastive loss between a video-question multi-modal transformer and an answer transformer.
+            We introduce the zero-shot VideoQA task and the VideoQA feature probe evaluation setting and show excellent results.
+            Furthermore, our method achieves competitive results on MSRVTT-QA, ActivityNet-QA, MSVD-QA and How2QA datasets.
+            We also show that our approach generalizes to another source of web video and text data.
+            We generate the WebVidVQA3M dataset from videos with alt-text annotations, and show its benefits for training VideoQA models.
+            Finally, for a detailed evaluation we introduce iVQA, a new VideoQA dataset with reduced language bias and high-quality manual annotations.
+	</p>
+        </div>
+          <a href="https://github.com/antoyang/just-ask"><button type="button" class="btn btn-primary btn-xs">code</button></a>
+          <a href="http://videoqa.paris.inria.fr/"><button type="button" class="btn btn-primary btn-xs">demo</button></a>
+      </div>
+    </div>
+<!-- end of Just Ask extension -->
 
 <!-- TubeDETR, CVPR 2022 -->
     <div class="row">
@@ -520,7 +577,7 @@ url={https://openreview.net/forum?id=HygrdpVKvr}}</tt></pre>
 
       <div class="container">
         <footer>
-          <p align="right"><small>Copyright © Antoine Yang &nbsp;/&nbsp; Last update: March 2022 </small></p>
+          <p align="right"><small>Copyright © Antoine Yang &nbsp;/&nbsp; Last update: May 2022 </small></p>
         </footer>
         <div style="height:10px;"></div>
       </div>
