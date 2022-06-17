@@ -71,7 +71,7 @@
         </div> <!-- end of Aboutme -->
 
          <p align="justify">
-	 I am a second-year PhD student in the <a href="http://www.di.ens.fr/willow">WILLOW team</a> of <a href="http://www.inria.fr/">Inria Paris</a> and <a href="http://www.ens.fr">&Eacute;cole Normale Sup&eacute;rieure (ENS)</a>, advised by <a href="http://www.di.ens.fr/~laptev">Ivan Laptev</a> and <a href="https://www.di.ens.fr/willow/people_webpages/cordelia/">Cordelia Schmid</a>.
+	 I am a second-year PhD student in the <a href="http://www.di.ens.fr/willow">WILLOW team</a> of <a href="http://www.inria.fr/">Inria Paris</a> and <a href="http://www.ens.fr">&Eacute;cole Normale Sup&eacute;rieure (ENS)</a>, advised by <a href="https://antoine77340.github.io/">Antoine Miech</a>, <a href="http://people.ciirc.cvut.cz/~sivic/">Josef Sivic</a>, <a href="http://www.di.ens.fr/~laptev">Ivan Laptev</a> and <a href="https://www.di.ens.fr/willow/people_webpages/cordelia/">Cordelia Schmid</a>.
              My current research is focused on learning multimodal video representations using the visual and textual modalities.
              I received an <a href="https://programmes.polytechnique.edu/cycle-ingenieur-polytechnicien/cycle-ingenieur-polytechnicien"> engineering degree </a> from <a href="https://www.polytechnique.edu/">École Polytechnique </a> and a MSc degree in <a href="https://www.master-mva.com/">Mathematics, Vision and Learning</a> from <a href="http://ens-paris-saclay.fr/">ENS Paris-Saclay</a> with highest honors and jury congratulations in 2020.
              During my engineering studies, I interned at <a href="http://www.noahlab.com.hk/">Huawei Noah's Ark Lab</a> in London where I worked with <a href="https://www.linkedin.com/in/fabio-maria-carlucci-a6662782/?originalSubdomain=uk">Fabio Maria Carlucci</a> on neural architecture search.
@@ -87,6 +87,28 @@
         </div>
         <!-- End news header -->
 
+    <!-- Google internship -->
+        <div class="row">
+          <div class="col-sm-1 col-md-1">
+            <span class="label label-info">06 / 2022</span>
+          </div>
+          <div class="col-sm-11 col-md-11">
+              I am starting a 6-month research internship at <a href="https://research.google/">Google Research</a> in Grenoble.
+          </div>
+        </div>
+        <div style="height:3px;"></div>
+
+    <!-- FrozenBiLM arxiv -->
+        <div class="row">
+          <div class="col-sm-1 col-md-1">
+            <span class="label label-info">06 / 2022</span>
+          </div>
+          <div class="col-sm-11 col-md-11">
+              New paper on arXiv: <a href="frozenbilm.html">Zero-Shot Video Question Answering via Frozen Bidirectional Language Models</a>.
+          </div>
+        </div>
+        <div style="height:3px;"></div>
+
     <!-- Just Ask extension accepted -->
         <div class="row">
           <div class="col-sm-1 col-md-1">
@@ -94,17 +116,6 @@
           </div>
           <div class="col-sm-11 col-md-11">
               <a href="just-ask.html">Just Ask extension</a> is accepted at the <a href="https://www.computer.org/csdl/journal/tp">TPAMI Special Issue on the Best Papers of ICCV 2021</a>!
-          </div>
-        </div>
-        <div style="height:3px;"></div>
-
-    <!-- Google internship -->
-        <div class="row">
-          <div class="col-sm-1 col-md-1">
-            <span class="label label-info">03 / 2022</span>
-          </div>
-          <div class="col-sm-11 col-md-11">
-              I will intern at <a href="https://research.google/">Google Research</a> in Grenoble during the Summer.
           </div>
         </div>
         <div style="height:3px;"></div>
@@ -217,6 +228,48 @@
             <h2>Research</h2>
               <p>See my <a href="https://scholar.google.com/citations?user=SlMKN6IAAAAJ">Google Scholar </a> and <a href="https://github.com/antoyang"> GitHub </a> profiles for more information.</p>
 
+<!-- FrozenBiLM, arXiv -->
+    <div class="row">
+	<div class="col-xs-10 col-sm-4 col-md-4">
+		<a class="thumbnail">
+		<img src="./img/frozenbilm.png" alt="Zero-Shot Video Question Answering via Frozen Bidirectional Language Models">
+                </a>
+	</div>
+      <div class="col-xs-12 col-sm-8 col-md-8">
+          <!-- <font color="red">[New]</font> -->
+          <strong>Zero-Shot Video Question Answering via Frozen Bidirectional Language Models</strong> </br>
+	<u>Antoine Yang</u>, Antoine Miech, Josef Sivic, Ivan Laptev, and Cordelia Schmid<br>
+          arXiv 2022 <br>
+          <a href="https://arxiv.org/pdf/2206.08155.pdf"><button type="button" class="btn btn-primary btn-xs">pdf</button></a>
+	<a href="frozenbilm.html"><button type="button" class="btn btn-primary btn-xs">project page</button></a>
+          <button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#bibtex6">bibtex</button>
+	<div id="bibtex6" class="collapse">
+	  <pre><tt>@article{yang2022frozenbilm,
+title = {Zero-Shot Video Question Answering via Frozen Bidirectional Language Models},
+author = {Yang, Antoine and Miech, Antoine and Sivic, Josef and Laptev, Ivan and Schmid, Cordelia},
+journal={arXiv preprint arXiv:2206.08155}
+year = {2022},
+}</tt></pre>
+	</div>
+	<button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#abstract6">abstract</button>
+	<div id="abstract6" class="collapse">
+        <p style="text-align: justify;">
+	        Video question answering (VideoQA) is a complex task that requires diverse multi-modal data for training.
+            Manual annotation of question and answers for videos, however, is tedious and prohibits scalability.
+            To tackle this problem, recent methods consider zero-shot settings with no manual annotation of visual question-answer.
+            In particular, a promising approach adapts frozen autoregressive language models pretrained on Web-scale text-only data to multi-modal inputs.
+            In contrast, we here build on frozen bidirectional language models (BiLM) and show that such an approach provides a stronger and cheaper alternative for zero-shot VideoQA.
+            In particular, (i) we combine visual inputs with the frozen BiLM using light trainable modules,
+            (ii) we train such modules using Web-scraped multi-modal data, and finally
+            (iii) we perform zero-shot VideoQA inference through masked language modeling, where the masked text is the answer to a given question.
+            Our proposed approach, FrozenBiLM, outperforms the state of the art in zero-shot VideoQA by a significant margin on a variety of datasets, including LSMDC-FiB, iVQA, MSRVTT-QA, MSVD-QA, ActivityNet-QA, TGIF-FrameQA, How2QA and TVQA.
+            It also demonstrates competitive performance in the few-shot and fully-supervised setting.
+            Our code and models will be made publicly available.</p>
+        </div>
+      </div>
+    </div>
+<!-- end of FrozenBiLM -->
+
 <!-- Just Ask extension, TPAMI22 -->
     <div class="row">
 	<div class="col-xs-10 col-sm-4 col-md-4">
@@ -228,7 +281,7 @@
           <!-- <font color="red">[New]</font> -->
           <strong>Learning to Answer Visual Questions from Web Videos</strong> (journal extension of <strong>Just Ask</strong>) </br>
 	<u>Antoine Yang</u>, Antoine Miech, Josef Sivic, Ivan Laptev, and Cordelia Schmid<br>
-          TPAMI Special Issue on the Best Papers of ICCV 2021 <br>
+          TPAMI 2022 (Special Issue on the Best Papers of ICCV 2021) <br>
           <a href="https://arxiv.org/pdf/2205.05019v2.pdf"><button type="button" class="btn btn-primary btn-xs">pdf</button></a>
 	<a href="just-ask.html"><button type="button" class="btn btn-primary btn-xs">project page</button></a>
           <button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#bibtex5">bibtex</button>
@@ -280,10 +333,11 @@ volume={PP}
           <button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#bibtex4">bibtex</button>
 	<div id="bibtex4" class="collapse">
 	  <pre><tt>@inproceedings{yang2022tubedetr,
-title={TubeDETR: Spatio-Temporal Video Grounding with Transformers},
-author={Yang, Antoine and Miech, Antoine and Sivic, Josef and Laptev, Ivan and Schmid, Cordelia},
-booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-year={2022}}</tt></pre>
+author    = {Yang, Antoine and Miech, Antoine and Sivic, Josef and Laptev, Ivan and Schmid, Cordelia},
+title     = {TubeDETR: Spatio-Temporal Video Grounding With Transformers},
+booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+year      = {2022},
+pages     = {16442-16453}}</tt></pre>
 	</div>
 	<button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#abstract4">abstract</button>
 	<div id="abstract4" class="collapse">
@@ -432,7 +486,8 @@ url={https://openreview.net/forum?id=HygrdpVKvr}}</tt></pre>
           <div class="col-md-12">
             <h2>Talks</h2>
             <ul>
-                <li>06/2022 - <a href="https://cvpr2022.thecvf.com/">CVPR 2022 Oral Session (New Orleans, Louisiana) </a> </li> <!-- Material TBC-->
+                <li>06/2022 - <a href="https://cvpr2022.thecvf.com/">CVPR 2022 Oral Session (New Orleans, Louisiana) </a> - <a href="https://www.youtube.com/watch?v=FT_50ylQMNs&ab_channel=AntoineYang">[5 min Video] </a> - <a href="slides/tubedetr-cvpr.pdf"> [Slides] </a> - <a href="slides/tubedetr-cvpr-poster.pdf"> [Poster] </a> </li>
+                <li>06/2022 - <a href="https://www.di.ens.fr/"> Seminar of the Computer Science department of &Eacute;cole Normale Sup&eacute;rieure (Mûr-de-Bretagne, France) </a> - <a href="slides/frozenbilm-diens.pdf"> [Slides] </a> </li>
                 <li>10/2021 - <a href="https://iccv2021.thecvf.com/home">ICCV 2021 Oral Session (Virtual) </a> - <a href="https://www.youtube.com/watch?v=eyEW5Z23Ofs&ab_channel=AntoineYang">[12 min Video] </a> - <a href="slides/just-ask-iccv.pdf"> [Slides] </a> - <a href="slides/just-ask-iccv-poster.pdf"> [Poster] </a> </li>
                 <li>06/2021 - <a href="https://holistic-video-understanding.github.io/workshops/cvpr2021.html">CVPR 2021 Holistic Video Understanding Workshop (Virtual) </a> - <a href="slides/just-ask-hvu-cvpr21.pdf"> [Slides] </a> - <a href="https://youtu.be/jzXdRT5W3C4?t=17280"> [Recording] </a> </li>
                 <li>05/2021 - <a href="https://www.rocq.inria.fr/semdoc/">Inria Junior Seminar (Virtual) </a> - <a href="https://www.rocq.inria.fr/semdoc/Presentations/just-ask-junior-seminar.pdf"> [Slides] </a> - <a href="https://webconf.math.cnrs.fr/playback/presentation/2.0/playback.html?meetingId=38b91f46f61e82195e2275670f5d26218e2f9bae-1621340178022"> [Recording] </a> </li>
@@ -573,7 +628,7 @@ url={https://openreview.net/forum?id=HygrdpVKvr}}</tt></pre>
 
       <div class="container">
         <footer>
-          <p align="right"><small>Copyright © Antoine Yang &nbsp;/&nbsp; Last update: May 2022 </small></p>
+          <p align="right"><small>Copyright © Antoine Yang &nbsp;/&nbsp; Last update: June 2022 </small></p>
         </footer>
         <div style="height:10px;"></div>
       </div>
