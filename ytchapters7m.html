@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel='icon' href='img/favicon.ico' type='image/x-icon'/>
+      <meta name="description" content="YTChapters-7M: Video Chapter Generation at Scale">
+      <meta name="author" content="Antoine Yang">
+      <title>YTChapters-7M: Video Chapter Generation at Scale</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+   </head>
+<body>
+      <!-- Navigation bar -->
+      <div class="navbar navbar-default  navbar-fixed-top bg-info">
+        <div class="container">
+          <div class="navbar-header">
+
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse" id="navbar-main">
+
+            <ul class="nav navbar-nav navbar-left">
+              <li ><a href="#data">Data</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- end of navigation bar -->
+      <div style="height:40px;" id="home"></div>
+      <div style="height:20px;"></div>
+
+      <div class="container">
+
+         <div class="header">
+            <h3>
+               <center> <b>YTChapters-7M: Video Chapter Generation at Scale</b> </center>
+            </h3>
+         </div>
+         <div style="height:10px;"></div>
+
+         <center>
+            <img id="image" src="img/ytchapter7m-header.png" width="60%">
+         </center>
+
+         <div class="row">
+            <h3>Abstract</h3>
+            <p style="text-align: justify;">
+                Segmenting untrimmed videos into chapters enables users to quickly navigate to the information of their interest.
+                This important topic has been understudied due to the lack of publicly released datasets.
+                To address this issue, we present YTChapters-7M, a dataset of 817K user-chaptered videos including 7M chapters in total.
+                YTChapters-7M is automatically scraped from YouTube, which enables the collection of large-scale data without additional manual annotation.
+                On top of this dataset, we define three tasks: video chapter generation, which requires temporally segmenting the video and generating a chapter title for each segment; video chapter generation with ground-truth boundaries, which requires generating a chapter title given an annotated video segment; and video chapter grounding, which requires temporally localizing a chapter given its annotated title.
+                We evaluate a range of state-of-the-art video-language models on these three tasks.
+                Our experiments notably reveal the benefits of scaling the training dataset size.
+                Finally, we show that pretraining on YTChapters-7M transfers well to dense video captioning tasks.
+            </p>
+         </div>
+
+         <div class="row" id="data">
+            <h3>YTChapters-7M Dataset </h3>
+            <ul class="list" style="list-style-type:square">
+                <li><a href="https://drive.google.com/drive/folders/TBC?usp=sharing"> Annotations and metadata </a> </li>
+                <li><a href="https://drive.google.com/drive/folders/TBC?usp=sharing"> Training/validation/testing splits </a> </li>
+                <li><a href="https://drive.google.com/drive/folders/TBC?usp=sharing"> Tagged videos </a> </li>
+                <li><a href="https://docs.google.com/forms/d/e/TBC/viewform?usp=sf_link"> Problematic video removal request form </a> </li>
+                <center>
+                    <figure>
+                        <img id="ytc" src="img/ytchapters7m.png" width="80%">
+                        <figcaption>Examples of user-chaptered videos in YTChapters-7M.</figcaption>
+                    </figure>
+                </center>
+            </ul>
+         </div>
+
+         <div class="row" id="people">
+            <h3>People</h3>
+            <center>
+               <table style="width:80%">
+                  <tbody>
+                     <tr>
+                        <td style="text-align: center; vertical-align: middle;"><a href="https://antoyang.github.io/"><img id="image1" src="img/antoine.jpg" width="60" height="60"> <br> Antoine <br> Yang</a></td>
+                        <td style="text-align: center; vertical-align: middle;"><a href="https://a-nagrani.github.io/"><img id="image6" src="img/arsha.jpeg" width="60" height="60"> <br> Arsha <br>Nagrani</a></td>
+                        <td style="text-align: center; vertical-align: middle;"><a href="http://www.di.ens.fr/~laptev/"><img id="image4" src="img/ivan.jpg" width="60" height="60"> <br> Ivan <br>Laptev</a></td>
+                        <td style="text-align: center; vertical-align: middle;"><a href="http://people.ciirc.cvut.cz/~sivic/"><img id="image3" src="img/josef.jpg" width="60" height="60"> <br>Josef <br>Sivic</a></td>
+                        <td style="text-align: center; vertical-align: middle;"><a href="https://www.di.ens.fr/willow/people_webpages/cordelia/"><img id="image5" src="img/cordelia.jpg" width="60" height="60"> <br>Cordelia <br>Schmid</a></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </center>
+         </div>
+
+          <div class="row" id="acknowledgements">
+            <h3>Acknowledgements</h3>
+            <p>
+                This work was granted access to the HPC resources of IDRIS under the allocation 2023-A0131011670 made by GENCI.
+            </p>
+            <p>
+                The work was funded by a Google gift, the French government under management of Agence Nationale de la Recherche as part of the "Investissements d'avenir" program, reference ANR-19-P3IA-0001 (PRAIRIE 3IA Institute), the Louis Vuitton ENS Chair on Artificial Intelligence, the European Regional Development Fund under project IMPACT (reg.\ no.\ CZ.02.1.01/0.0/0.0/15 003/0000468).
+            </p>
+            <p>
+                We thank Jack Hessel and Rémi Lacroix for helping with forming the dataset.
+            </p>
+         </div>
+
+         <div class="row" id="copyright">
+            <h3>Copyright Notice</h3>
+            <p>The documents contained in these directories are included by the contributing authors as a means to ensure timely dissemination of scholarly and technical work on a non-commercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author's copyright.</p>
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="col-md-3 col-sm-12">
+            <center>
+               <img src="img/inria.png" width="150">
+            </center>
+         </div>
+         <div class="col-md-3 col-sm-12">
+            <center>
+               <img src="img/ens.png" width="150">
+            </center>
+         </div>
+          <div class="col-md-3 col-sm-12">
+            <center>
+               <img src="img/google-research.png" width="300">
+            </center>
+         </div>
+         <div class="col-md-3 col-sm-12">
+            <center>
+               <img src="img/ciirc.png" width="120">
+            </center>
+         </div>
+      </div>
+      <!-- /container -->
+      <!-- Bootstrap core JavaScript
+         ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>
