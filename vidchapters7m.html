@@ -4,9 +4,9 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel='icon' href='img/favicon.ico' type='image/x-icon'/>
-      <meta name="description" content="YTChapters-7M: Video Chapter Generation at Scale">
+      <meta name="description" content="VidChapters-7M: Video Chapters at Scale">
       <meta name="author" content="Antoine Yang">
-      <title>YTChapters-7M: Video Chapter Generation at Scale</title>
+      <title>VidChapters-7M: Video Chapters at Scale</title>
       <link href="css/bootstrap.min.css" rel="stylesheet">
    </head>
 <body>
@@ -38,13 +38,13 @@
 
          <div class="header">
             <h3>
-               <center> <b>YTChapters-7M: Video Chapter Generation at Scale</b> </center>
+               <center> <b>VidChapters-7M: Video Chapters at Scale</b> </center>
             </h3>
          </div>
          <div style="height:10px;"></div>
 
          <center>
-            <img id="image" src="img/ytchapter7m-header.png" width="60%">
+            <img id="image" src="img/vidchapters7m-header.png" width="60%">
          </center>
 
          <div class="row">
@@ -52,17 +52,17 @@
             <p style="text-align: justify;">
                 Segmenting untrimmed videos into chapters enables users to quickly navigate to the information of their interest.
                 This important topic has been understudied due to the lack of publicly released datasets.
-                To address this issue, we present YTChapters-7M, a dataset of 817K user-chaptered videos including 7M chapters in total.
-                YTChapters-7M is automatically scraped from YouTube, which enables the collection of large-scale data without additional manual annotation.
+                To address this issue, we present VidChapters-7M, a dataset of 817K user-chaptered videos including 7M chapters in total.
+                VidChapters-7M is automatically created from videos online in a scalable manner, without requiring any additional manual annotation.
                 On top of this dataset, we define three tasks: video chapter generation, which requires temporally segmenting the video and generating a chapter title for each segment; video chapter generation with ground-truth boundaries, which requires generating a chapter title given an annotated video segment; and video chapter grounding, which requires temporally localizing a chapter given its annotated title.
-                We evaluate a range of state-of-the-art video-language models on these three tasks.
-                Our experiments notably reveal the benefits of scaling the training dataset size.
-                Finally, we show that pretraining on YTChapters-7M transfers well to dense video captioning tasks.
+                We benchmark both simple baselines as well as state-of-the-art video-language models on these three tasks.
+                We also show that pretraining on VidChapters-7M transfers well to dense video captioning tasks, largely improving the state of the art on the YouCook2 and ViTT benchmarks.
+                Finally, our experiments reveal that downstream performance scales well with the size of the pretraining dataset.
             </p>
          </div>
 
          <div class="row" id="data">
-            <h3>YTChapters-7M Dataset </h3>
+            <h3>VidChapters-7M Dataset </h3>
             <ul class="list" style="list-style-type:square">
                 <li><a href="https://drive.google.com/drive/folders/TBC?usp=sharing"> Annotations and metadata </a> </li>
                 <li><a href="https://drive.google.com/drive/folders/TBC?usp=sharing"> Training/validation/testing splits </a> </li>
@@ -71,7 +71,7 @@
                 <center>
                     <figure>
                         <img id="ytc" src="img/ytchapters7m.png" width="80%">
-                        <figcaption>Examples of user-chaptered videos in YTChapters-7M.</figcaption>
+                        <figcaption>Examples of user-chaptered videos in VidChapters-7M.</figcaption>
                     </figure>
                 </center>
             </ul>
@@ -126,7 +126,7 @@
          </div>
           <div class="col-md-3 col-sm-12">
             <center>
-               <img src="img/google-research.png" width="300">
+               <img src="img/vgg_logo.png" width="75">
             </center>
          </div>
          <div class="col-md-3 col-sm-12">
