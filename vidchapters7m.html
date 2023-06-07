@@ -44,7 +44,7 @@
          <div style="height:10px;"></div>
 
          <center>
-            <img id="image" src="img/vidchapters-7m.png" width="60%">
+            <img id="image" src="img/vidchapters-7m-header.png" width="60%">
          </center>
 
          <div class="row">
@@ -53,8 +53,10 @@
                 Segmenting untrimmed videos into chapters enables users to quickly navigate to the information of their interest.
                 This important topic has been understudied due to the lack of publicly released datasets.
                 To address this issue, we present VidChapters-7M, a dataset of 817K user-chaptered videos including 7M chapters in total.
-                VidChapters-7M is automatically created from videos online in a scalable manner, without requiring any additional manual annotation.
-                On top of this dataset, we define three tasks: video chapter generation, which requires temporally segmenting the video and generating a chapter title for each segment; video chapter generation with ground-truth boundaries, which requires generating a chapter title given an annotated video segment; and video chapter grounding, which requires temporally localizing a chapter given its annotated title.
+                VidChapters-7M is automatically created from videos online in a scalable manner by scraping user-annotated chapters and hence without any additional manual annotation.
+                We introduce the following three tasks based on this data.
+                First, the video chapter generation task consists of temporally segmenting the video and generating a chapter title for each segment.
+                To further dissect the problem, we also define two variants of this task: video chapter generation given ground-truth boundaries, which requires generating a chapter title given an annotated video segment, and video chapter grounding, which requires temporally localizing a chapter given its annotated title.
                 We benchmark both simple baselines as well as state-of-the-art video-language models on these three tasks.
                 We also show that pretraining on VidChapters-7M transfers well to dense video captioning tasks, largely improving the state of the art on the YouCook2 and ViTT benchmarks.
                 Finally, our experiments reveal that downstream performance scales well with the size of the pretraining dataset.
@@ -85,6 +87,12 @@
                 <li><a href="https://www.rocq.inria.fr/cluster-willow/ayang/VC/tagged.pkl"> Tagged video IDs </a> </li>
                 <li><a href="https://docs.google.com/forms/d/1ieRsKkalXX0pBFEgCOleTBnHi33PO0wJfRS57-vizB8"> Problematic video removal request form </a> </li>
             </ul>
+             <center>
+               <figure>
+                  <img id="sqa" src="img/vidchapters-7m.png" width="60%">
+                  <figcaption>Examples of user-annotated chapters in VidChapters-7M.</figcaption>
+               </figure>
+            </center>
          </div>
 
           <div class="row" id="disclaimer">
