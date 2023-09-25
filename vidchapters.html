@@ -24,6 +24,8 @@
           <div class="navbar-collapse collapse" id="navbar-main">
 
             <ul class="nav navbar-nav navbar-left">
+              <li ><a href="https://arxiv.org/abs/TBC">Paper</a></li>
+              <li ><a href="https://github.com/antoyang/VidChapters"><i class="fab fa-github"></i>Code</a></li>
               <li ><a href="#data">Data</a></li>
             </ul>
           </div>
@@ -44,21 +46,21 @@
          <div style="height:10px;"></div>
 
          <center>
-            <img id="image" src="img/vidchapters-7m-header.png" width="60%">
+            <img id="image" src="img/vidchapters-header.png" width="60%">
          </center>
 
          <div class="row">
             <h3>Abstract</h3>
             <p style="text-align: justify;">
-                Segmenting untrimmed videos into chapters enables users to quickly navigate to the information of their interest.
+                Segmenting long videos into chapters enables users to quickly navigate to the information of their interest.
                 This important topic has been understudied due to the lack of publicly released datasets.
                 To address this issue, we present VidChapters-7M, a dataset of 817K user-chaptered videos including 7M chapters in total.
                 VidChapters-7M is automatically created from videos online in a scalable manner by scraping user-annotated chapters and hence without any additional manual annotation.
                 We introduce the following three tasks based on this data.
                 First, the video chapter generation task consists of temporally segmenting the video and generating a chapter title for each segment.
                 To further dissect the problem, we also define two variants of this task: video chapter generation given ground-truth boundaries, which requires generating a chapter title given an annotated video segment, and video chapter grounding, which requires temporally localizing a chapter given its annotated title.
-                We benchmark both simple baselines as well as state-of-the-art video-language models on these three tasks.
-                We also show that pretraining on VidChapters-7M transfers well to dense video captioning tasks, largely improving the state of the art on the YouCook2 and ViTT benchmarks.
+                We benchmark both simple baselines and state-of-the-art video-language models for these three tasks.
+                We also show that pretraining on VidChapters-7M transfers well to dense video captioning tasks in both zero-shot and finetuning settings, largely improving the state of the art on the YouCook2 and ViTT benchmarks.
                 Finally, our experiments reveal that downstream performance scales well with the size of the pretraining dataset.
             </p>
          </div>
@@ -66,30 +68,38 @@
           <div class="row" id="paper">
             <h3>Paper </h3>
             <ul class="list" style="list-style-type:square">
-               <li>Available soon</li>
+               <li><a href="https://arxiv.org/abs/TBC">arXiv</a></li>
             </ul>
+
+            <h4>BibTeX</h4>
+                        <pre><tt>@inproceedings{yang2023vidchapters,
+title={VidChapters-7M: Video Chapters at Scale},
+author={Antoine Yang and Arsha Nagrani and Ivan Laptev and Josef Sivic and Cordelia Schmid},
+booktitle={NeurIPS},
+year = {2023}}</tt></pre>
           </div>
 
           <div class="row" id="code">
             <h3> Code and models </h3>
             <ul class="list" style="list-style-type:square">
-               <li><a href="https://drive.google.com/file/d/1X4KHTQgV64yZqu7puDlVz6hUFtiZSz5N/view?usp=sharing">Code in zip file.</a> Please see the README for more information.</li>
-               <li>Model checkpoints will be available soon.</li>
+               <li><a href="https://github.com/antoyang/VidChapters">GitHub repository </a></li>
+                <li><a href="https://drive.google.com/drive/folders/1Gbg_eXtoLE2x1eS_HaA268Hx7cDjodRG?usp=sharing"> Processed data </a></li>
+               <li><a href="https://drive.google.com/drive/folders/1mZA-E9c8AJuFMg4v3pf9msggVCGU2U_d?usp=sharing"> Model checkpoints </a></li>
             </ul>
           </div>
 
          <div class="row" id="data">
             <h3>VidChapters-7M Dataset </h3>
             <ul class="list" style="list-style-type:square">
-                <li><a href="https://www.rocq.inria.fr/cluster-willow/ayang/VC/chapters.pkl"> Annotations </a> </li>
+                <li><a href="https://drive.google.com/file/d/1_U_KwDK2OdEq02jW-VDsbtHLhgKqTnXT/view?usp=sharing"> Annotations </a> </li>
                 <li><a href="https://www.rocq.inria.fr/cluster-willow/ayang/VC/asr.pkl"> ASR </a> </li>
-                <li><a href="https://www.rocq.inria.fr/cluster-willow/ayang/VC/train.json">Training</a>/<a href="https://www.rocq.inria.fr/cluster-willow/ayang/VC/val.json">Validation</a>/<a href="https://www.rocq.inria.fr/cluster-willow/ayang/VC/test.json">Testing</a> video IDs </li>
-                <li><a href="https://www.rocq.inria.fr/cluster-willow/ayang/VC/tagged.pkl"> Tagged video IDs </a> </li>
+                <li><a href="https://drive.google.com/file/d/1kW52N-KULXFdGfjnKK8gz90qdqEGxa6h/view?usp=sharing">Training</a>/<a href="https://drive.google.com/file/d/1tH5WCHfVxK0H8LcQm07ECRLuR47Iu6n4/view?usp=sharing">Validation</a>/<a href="https://drive.google.com/file/d/1hOt3_A6Htme6IMj8AXTRkRDfYDju78bR/view?usp=sharing">Testing</a> video IDs </li>
+                <li><a href="https://drive.google.com/file/d/1B0AZ0xHLQhlhq8Mr9O-L0fqKPDCU-_OO/view?usp=sharing"> Tagged video IDs </a> </li>
                 <li><a href="https://docs.google.com/forms/d/1ieRsKkalXX0pBFEgCOleTBnHi33PO0wJfRS57-vizB8"> Problematic video removal request form </a> </li>
             </ul>
              <center>
                <figure>
-                  <img id="sqa" src="img/vidchapters-7m.png" width="60%">
+                  <img id="sqa" src="img/vidchapters.png" width="60%">
                   <figcaption>Examples of user-annotated chapters in VidChapters-7M.</figcaption>
                </figure>
             </center>
@@ -124,10 +134,10 @@
                 This work was granted access to the HPC resources of IDRIS under the allocation 2023-A0131011670 made by GENCI.
             </p>
             <p>
-                The work was funded by a Google gift, the French government under management of Agence Nationale de la Recherche as part of the "Investissements d'avenir" program, reference ANR-19-P3IA-0001 (PRAIRIE 3IA Institute), the Louis Vuitton ENS Chair on Artificial Intelligence, the European Regional Development Fund under project IMPACT (reg.\ no.\ CZ.02.1.01/0.0/0.0/15 003/0000468).
+                The work was funded by Antoine Yang's Google PhD fellowship, the French government under management of Agence Nationale de la Recherche as part of the "Investissements d'avenir" program, reference ANR-19-P3IA-0001 (PRAIRIE 3IA Institute), the Louis Vuitton ENS Chair on Artificial Intelligence, the European Regional Development Fund under project IMPACT (reg.\ no.\ CZ.02.1.01/0.0/0.0/15 003/0000468).
             </p>
             <p>
-                We thank Jack Hessel and Rémi Lacroix for helping with forming the dataset.
+                We thank Jack Hessel and Rémi Lacroix for helping with forming the dataset, and Antoine Miech for interesting discussions.
             </p>
          </div>
 
