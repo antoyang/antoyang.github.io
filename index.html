@@ -94,7 +94,7 @@
             <span class="label label-info">11 / 2023</span>
           </div>
           <div class="col-sm-11 col-md-11">
-              I have successfully defended my PhD thesis!
+              I have successfully defended my <a href="https://hal.science/tel-04307117">PhD thesis</a>!
               </div>
         </div>
     <div style="height:3px;"></div>
@@ -328,6 +328,55 @@
             <h2>Research</h2>
               <p>See my <a href="https://scholar.google.com/citations?user=SlMKN6IAAAAJ">Google Scholar </a> and <a href="https://github.com/antoyang"> GitHub </a> profiles for more information.</p>
 
+<!-- PhD Thesis -->
+    <div class="row">
+	<div class="col-xs-10 col-sm-4 col-md-4" style='height:120px'>
+		<a class="thumbnail">
+		<img src="./img/thesis-header.png" height="100%" alt="Learning Visual Language Models for Video Understanding">
+                </a>
+	</div>
+      <div class="col-xs-12 col-sm-8 col-md-8">
+          <strong>Learning Visual Language Models for Video Understanding</strong> </br>
+	<u>Antoine Yang</u><br>
+          PhD Thesis <br>
+          <a href="https://hal.science/tel-04307117"><button type="button" class="btn btn-primary btn-xs">pdf</button></a>
+          <button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#bibtex10">bibtex</button>
+	<div id="bibtex10" class="collapse">
+	  <pre><tt>@phdthesis{yang:tel-04307117,
+  TITLE = {{Learning Visual Language Models for Video Understanding}},
+  AUTHOR = {Yang, Antoine},
+  URL = {https://hal.science/tel-04307117},
+  SCHOOL = {{Ecole Normale Superieure de Paris - ENS Paris}},
+  YEAR = {2023},
+  MONTH = Nov,
+  KEYWORDS = {Machine learning ; Computer vision ; Artificial intelligence ; Natural language processing ; Video understanding ; Deep learning ; Apprentissage automatique ; Vision par ordinateur ; Intelligence artificielle ; Traitement du langage naturel ; Compr{\'e}hension de vid{\'e}os ; Apprentissage profond},
+  TYPE = {Theses},
+  PDF = {https://hal.science/tel-04307117/file/PhD_Yang_Antoine_final.pdf},
+  HAL_ID = {tel-04307117},
+  HAL_VERSION = {v1},
+}</tt></pre>
+	</div>
+	<button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#abstract10">abstract</button>
+	<div id="abstract10" class="collapse">
+        <p style="text-align: justify;">
+	        The goal of this thesis is to build and train machine learning models that combine the power of natural language processing with visual understanding, enabling a comprehensive and detailed comprehension of the content within videos. 
+		First, we propose two scalable approaches to develop video question answering models without the need for costly manual annotation. 
+		We automatically generate video question answering data from narrated videos using text-only question-generation models. 
+		We then show that a multi-modal transformer trained contrastively on the generated data can answer visual questions in a zero-shot manner. 
+		In order to bypass the data generation procedure, we present an alternative approach, dubbed FrozenBiLM, that directly leverages bidirectional masked language models. 
+		Second, we develop TubeDETR, a transformer model that can spatially and temporally localize a natural language query in an untrimmed video. 
+		Unlike prior spatio-temporal grounding approaches, TubeDETR can be effectively trained end-to-end on untrimmed videos. 
+		Third, we present a new model and a new dataset for multi-event understanding in untrimmed videos. 
+		We introduce the Vid2Seq model which generates dense natural language descriptions and corresponding temporal boundaries for all events in an untrimmed video by predicting a single sequence of tokens. 
+		Moreover, Vid2Seq can be effectively pretrained on narrated videos at scale using transcribed speech as pseudo-supervision. 
+		Finally, we introduce VidChapters-7M, a large-scale dataset of user-chaptered videos. Based on this dataset, we evaluate state-of-the-art models on three tasks including video chapter generation. 
+		We also show that video chapter generation models transfer well to dense video captioning in both zero-shot and finetuning settings.
+            </p>
+        </div>
+      </div>
+    </div>
+<!-- end of PhD thesis -->
+		  
 <!-- VidChapters-7M, NeurIPS 2023 D&B -->
     <div class="row">
 	<div class="col-xs-10 col-sm-4 col-md-4" style='height:120px'>
