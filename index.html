@@ -91,6 +91,17 @@
         </div>
         <!-- End news header -->
 
+    <!-- Chapter-Llama accepted -->
+        <div class="row">
+          <div class="col-sm-1 col-md-1">
+            <span class="label label-success">03 / 2025</span>
+          </div>
+          <div class="col-sm-11 col-md-11">
+              <a href="https://imagine.enpc.fr/~lucas.ventura/chapter-llama/">Chapter-Llama</a> is accepted at <a href="https://cvpr.thecvf.com/">CVPR 2025</a>!
+          </div>
+        </div>
+        <div style="height:3px;"></div>
+
     <!-- Gemini 2.0 Update -->
     <div class="row">
           <div class="col-sm-1 col-md-1">
@@ -408,6 +419,76 @@
             <h2>Research</h2>
               <p>See my <a href="https://scholar.google.com/citations?user=SlMKN6IAAAAJ">Google Scholar </a> and <a href="https://github.com/antoyang"> GitHub </a> profiles for more information.</p>
 
+<!-- Chapter-Llama -->
+    <div class="row">
+	<div class="col-xs-10 col-sm-4 col-md-4" style='height:120px'>
+		<a class="thumbnail">
+		<img src="https://imagine.enpc.fr/~lucas.ventura/chapter-llama/images/teaser.png" height="100%" alt="Chapter-Llama: Efficient Chaptering in Hour-Long Videos with LLMs">
+                </a>
+	</div>
+      <div class="col-xs-12 col-sm-8 col-md-8">
+          <strong>Chapter-Llama: Efficient Chaptering in Hour-Long Videos with LLMs</strong> </br>
+	Lucas Ventura, <u>Antoine Yang</u>, Cordelia Schmid, Gül Varol<br>
+          CVPR 2025 <br>
+          <a href="https://arxiv.org/pdf/2504.00072"><button type="button" class="btn btn-primary btn-xs">pdf</button></a>
+	<a href="https://imagine.enpc.fr/~lucas.ventura/chapter-llama/"><button type="button" class="btn btn-primary btn-xs">project page</button></a>
+          <button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#bibtex8">bibtex</button>
+	<div id="bibtex8" class="collapse">
+	  <pre><tt>@inproceedings{ventura2025chapterllama,
+title={Chapter-Llama: Efficient Chaptering in Hour-Long Videos with LLMs},
+author={Lucas Ventura and Antoine Yang and Cordelia Schmid and G{\"u}l Varol},
+booktitle={CVPR},
+year={2025}}
+</tt></pre></tt></pre>
+	</div>
+	<button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#abstract8">abstract</button>
+	<div id="abstract8" class="collapse">
+        <p style="text-align: justify;">
+	        We address the task of video chaptering, i.e., partitioning a long video timeline into semantic units and generating corresponding chapter titles. 
+		While relatively underexplored, automatic chaptering has the potential to enable efficient navigation and content retrieval in long-form videos. 
+		In this paper, we achieve strong chaptering performance on hour-long videos by efficiently addressing the problem in the text domain with our 'Chapter-Llama' framework. 
+		Specifically, we leverage a pretrained large language model (LLM) with large context window, and feed as input (i) speech transcripts and (ii) captions describing video frames, along with their respective timestamps. 
+		Given the inefficiency of exhaustively captioning all frames, we propose a lightweight speech-guided frame selection strategy based on speech transcript content, and experimentally demonstrate remarkable advantages. 
+		We train the LLM to output timestamps for the chapter boundaries, as well as free-form chapter titles. This simple yet powerful approach scales to processing one-hour long videos in a single forward pass. 
+		Our results demonstrate substantial improvements (e.g., 45.3 vs 26.7 F1 score) over the state of the art on the recent VidChapters-7M benchmark. 
+		To promote further research, we release our code and models.
+            </p>
+        </div>
+          <a href="https://github.com/lucas-ventura/chapter-llama"><button type="button" class="btn btn-primary btn-xs">code</button></a>
+          <a class="github-button" href="https://github.com/lucas-ventura/chapter-llama" data-icon="octicon-star" data-show-count="true" aria-label="Star google-research/scenic on GitHub">Star</a>
+      </div>
+    </div>
+<!-- end of Chapter-Llama -->
+
+<!-- Gemini 2.0 -->
+    <div class="row">
+	<div class="col-xs-10 col-sm-4 col-md-4" style='height:120px'>
+		<a class="thumbnail">
+		<img src="./img/gemini_2p0.png" height="100%" alt="Gemini 2.0">
+                </a>
+	</div>
+      <div class="col-xs-12 col-sm-8 col-md-8">
+          <strong>Gemini 2.0: a new AI model for the agentic era</strong> </br>
+	Gemini Team, Google<br>
+          Google Blog 2024 <br>
+	<button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#abstract11">abstract</button>
+	<div id="abstract11" class="collapse">
+        <p style="text-align: justify;">
+	In December, we announced the Gemini 2.0 model series, designed for the "agentic era," aiming to create AI that can understand, plan, and act on users' behalf.
+The first model, Gemini 2.0 Flash, offers enhanced performance (outperforming 1.5 Pro at twice the speed), native multimodal output (images, steerable audio), and native tool use.
+Gemini 2.0 powers Search's AI Overviews, and a new "Deep Research" feature.
+We demonstrate several research prototypes of Gemini 2.0 agentic capabilities, including updates to Project Astra (universal assistant), the new Project Mariner (browser agent), Jules (developer agent), and agents in gaming.
+In the February update, we announced Gemini 2.0 Pro, our best model at coding and complex prompts, and 2.0 Flash-Lite, our most cost-efficient model yet.
+	</p>
+        </div>
+          <a href="https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024"><button type="button" class="btn btn-danger btn-xs">blogpost (December)</button></a>
+          <a href="https://blog.google/technology/google-deepmind/gemini-model-updates-february-2025/"><button type="button" class="btn btn-danger btn-xs">blogpost (February)</button></a>
+          <a href="https://aistudio.google.com/?utm_source=agd&utm_medium=referral&utm_campaign=blog-feb&utm_content=1"><button type="button" class="btn btn-primary btn-xs">Google AI Studio</button></a>
+          <a href="https://github.com/GoogleCloudPlatform/generative-ai/blob/main/gemini/getting-started/intro_gemini_2_0_flash.ipynb"><button type="button" class="btn btn-primary btn-xs">colab</button></a>
+      </div>
+    </div>
+<!-- end of Gemini 2.0 -->
+		  
 <!-- Gemini 1.5 -->
     <div class="row">
 	<div class="col-xs-10 col-sm-4 col-md-4" style='height:120px'>
